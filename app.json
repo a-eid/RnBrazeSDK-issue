@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "text-braze-sdk",
+    "slug": "text-braze-sdk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aeid.text-braze-sdk",
+      "config": {}
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET"
+      ],
+      "config": {
+        "googleMaps": {}
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@braze/expo-plugin",
+        {
+          "androidApiKey": "",
+          "iosApiKey": "",
+          "baseUrl": "",
+          "sessionTimeout": 60,
+          "enableGeofence": false,
+          "enableBrazeIosPush": false,
+          "enableFirebaseCloudMessaging": false,
+          "firebaseCloudMessagingSenderId": "",
+          "enableSdkAuthentication": false,
+          "logLevel": 0,
+          "minimumTriggerIntervalInSeconds": 0,
+          "enableAutomaticLocationCollection": false,
+          "enableAutomaticGeofenceRequests": false,
+          "dismissModalOnOutsideTap": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8a02e02e-9255-41ce-8b6c-6a7acc142708"
+      }
+    }
+  }
+}
